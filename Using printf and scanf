@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int age;
+    int lifespan = 75;
+    //printf displays your data to the console. 
+    printf("How old are you?\n");
+    //When using scanf, you must tell the scanf what datatype to accept "%d" is for ints, it stands for decimal
+    //the next param passed to scanf is the variable, notice how we are using "&" this symbol will give you the 
+    //byte number, scanf gets the data from the user and assigns it to the byte number in the allocated memory.
+    scanf("%d", &age);
+    
+    //now to print the variables, we use the printf function, we supply the "%d" where we would like our variables to appear.
+    //The second param is the name of the var, notice how we are not using an &, this is because we are not asssigning data 
+    //to the var, we are simply calling it to be used in the printf function. The placement of vars in the second param of printf
+    //will affect the data printed. The first %d will be the first var passed, in this case, age!
+    printf("You are %d years old, The Average American lives to be %d \n",age, lifespan);
+    return 0;
+}
