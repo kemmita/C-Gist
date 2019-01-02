@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    char ch;
+    int i, j;
+    printf("Enter an Integer:");
+    scanf("%d", &i);
+    printf("Enter a character:");
+    //we must provide a space before the %c as the enter key will be regerstered as an input and will skip to the next int input,
+    //skiping the second question altogether.
+    scanf(" %c", &ch);
+    printf("Enter an Integer:");
+    scanf("%d", &j);
+    return 0;
+}
