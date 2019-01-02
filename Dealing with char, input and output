@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    char ch = 'A';
+    //Below we use %c to print a char
+    printf("The ch var is: %c\n", ch);
+    printf("Enter a character:");
+    //Below we use getchar instead of scanf.
+    char another = getchar();
+    printf("%c\n",another);
+    return 0;
+}
