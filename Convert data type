@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int a = 5, b =2;
+    float r;
+    //in order to convert our math problem a/b we must first convert one of the ints to float, so that it will be rendered as such
+    //we can do this by prefexing a varaible with (datatype)
+    r = (float)a/b;
+    printf("r = %f\n", r);
+    return 0;
+}
