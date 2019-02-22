@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int a,b,max;
+    printf("Please Enter The first Number: \n");
+    scanf("%d", &a);
+    printf("Please Enter The second Number: \n");
+    scanf("%d", &b);
+
+    if(a > b){
+        max = a;
+    }else{
+        max = b;
+    }
+    printf("The max number is %d", max);
+    return 0;
+}
