@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    double income;
+    printf("Enter your income");
+    scanf("%lf", &income);
+    income > 50 ? printf("You are rich") : printf("You are poor");
+    return 0;
+}
