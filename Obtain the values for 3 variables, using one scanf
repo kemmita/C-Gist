@@ -1,0 +1,10 @@
+1. We wish to know the value of a,b, and c. Using scanf and using the rteference symbol, we can provide the value for all vars with one scanf.
+
+#include <stdio.h>
+int main() {
+    int a,b,c, max;
+    printf("Enter 3 numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+    printf("%d", b);
+    return 0;
+}
