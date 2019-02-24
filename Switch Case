@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Please enter one whole number: ");
+    scanf("%d", &n);
+    switch (n){
+        case 1:
+            printf("You entered one.");
+            break;
+        case 2:
+            printf("You entered two.");
+            break;
+        case 3:
+            printf("You entered three.");
+            break;
+        default:
+            printf("You entered an invalid number.");
+            break;
+    }
+    return 0;
+}
