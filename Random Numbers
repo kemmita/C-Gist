@@ -1,0 +1,16 @@
+1. In C, there is no way to generate radnom numbers, so we must use the time function in combination with srand() und rand()
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main() {
+
+    long long  t = time(NULL);
+
+    srand(t);
+    for (int i = 1; i <= 10 ; ++i) {
+        int n = rand();
+        printf("%d \n", n);
+    }
+    return 0;
+}
