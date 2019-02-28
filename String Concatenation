@@ -1,0 +1,13 @@
+1. In C, we will take the first char array and will need to append to that array what we wish to concantenate.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+    char first[80] = "Russell Kemmit";
+    char second[80] = "Jane Kemmit";
+    strcat(first, " has a daughter named ");
+    strcat(first, second);
+    printf("%s", first);
+    return 0;
+}
