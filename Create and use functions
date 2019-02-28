@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+// Supply prototype if you wish to write your functions below main.
+double getInterest(double,double,double);
+int main() {
+    double p, r, t;
+    printf("Enter Principal: ");
+    scanf("%lf", &p);
+    printf("Enter Rate of Interest: ");
+    scanf("%lf", &r);
+    printf("Enter Duration: ");
+    scanf("%lf", &t);
+    // Use function
+    double g = getInterest(p, r, t);
+    printf("%0.2lf", g);
+    return 0;
+}
+// Crete function
+double getInterest(double principal,double rate,double time){
+    return (principal * rate * time) / 100.00;
+}
