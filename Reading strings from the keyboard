@@ -1,0 +1,14 @@
+1. We may be limited to a string limit of 100 chars using this solution.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+    char str[100];
+    printf("Enter your name please.");
+    scanf("%[^\n]", str);
+    printf("Welcome, %s\n", str);
+    return 0;
+}
+
+
