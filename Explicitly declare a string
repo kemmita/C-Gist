@@ -1,0 +1,10 @@
+1. To explictly declare a string, we will need to use a char array as there is no string litterals available in C.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+    char name[] = "Russell Kemmit";
+    printf("Hello %s\n", name);
+    return 0;
+}
