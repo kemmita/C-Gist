@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+    char first[80] = "Russell Kemmit";
+    char second[80] = "Russell Kemmit";
+
+    int i = strcmp(first, second);
+    if (i == 0){
+        printf("You have a matching pair of strings.");
+    }else{
+        printf("Your strings do not match");
+    }
+    return 0;
+}
