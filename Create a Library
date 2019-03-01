@@ -1,0 +1,32 @@
+1. In C we do not have classes, and thus do not have the luxury of inheritence or polymorphism. What we can do is create libraries
+we can use the functions defined in the library where we include the library. 
+
+2. Create one .c file and one .h file in the root directory
+
+3. .c file
+
+int addition(int a, int b){
+    return a + b;
+}
+
+4. .h file
+
+#ifndef CPROJECTONE_RKMATH_H
+#define CPROJECTONE_RKMATH_H
+    int addition(int, int);
+#endif //CPROJECTONE_RKMATH_H
+
+5. run command gcc -c *.c
+6. run command ar -cvq librkutils.a *.o
+7. now in main.c include the library.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "rkmath.h"
+int main() {
+    int x = addition(2,2);
+    printf("%d", x);
+    return 0;
+}
+
+
