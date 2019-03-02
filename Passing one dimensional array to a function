@@ -10,3 +10,15 @@ int main() {
     printArray(&x, 5);
     return 0;
 }
+
+//above it the same as the normal usage of arrays as params below
+int printArray(int x[]){
+    for (int i = 0; i < 5; ++i) {
+        printf("%4d", x[i]);
+    }
+}
+int main() {
+    int x[] = {10, 20, 30, 40, 50};
+    printArray(&x, 5);
+    return 0;
+}
