@@ -1,0 +1,9 @@
+1. We can create Macros by using the #define keyword
+
+#include <stdio.h>
+//If we print the macro MAX, it will print a value of 30.
+#define MAX 30
+int main() {
+    printf("%d", MAX);
+   return 0;
+}
