@@ -1,0 +1,18 @@
+1. If we want x to take on the value of int, we can use typedef
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Student{
+    int age;
+    double gpa;
+};
+
+typedef int x;
+
+
+int main() {
+    x age = 23;
+    printf("%d", age);
+    return 0;
+}
