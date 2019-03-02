@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef enum {
+    Sun, Mon, Tues, Wed, Thurs, Fri, Sat
+} DaysOfWeek;
+
+
+
+int main() {
+    DaysOfWeek d = Mon;
+    printf("the value of Sunday is %d", d);
+    return 0;
+}
