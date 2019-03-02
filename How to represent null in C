@@ -1,0 +1,32 @@
+1. Below you will see "'\0'", this is the same as "NULL"
+
+
+
+#include <stdio.h>
+#define MAX 30
+
+
+void split(char str[], char f[], char sec[]){
+    int i = 0;
+    int j = 0;
+    while(str[i] != '*'){
+        f[j] = str[i];
+        i++; j++;
+    }
+    f[j] = '\0';
+    i = i+1;
+    j = 0;
+    while(str[i] != '\0'){
+        sec[j] = str[i];
+        i++; j++;
+    }
+}
+int main() {
+    char str[] = "Book*abacsu";
+    char first[MAX];
+    char second[MAX];
+    split(str, first, second);
+    printf("String = %s \n First = %s \n Second = %s \n", str, first, second);
+
+   return 0;
+}
