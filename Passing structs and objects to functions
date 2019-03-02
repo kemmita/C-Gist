@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//here we create the object
+typedef struct{
+    int age;
+    char name[20];
+    double gpa;
+} Student;
+
+void inputStudent(Student sp[]){
+    printf("Enter Roll: ");
+    scanf("%d", &sp->age);
+    printf("Enter Name: ");
+    scanf(" %[^\n]", sp->name);
+    printf("Enter GPA: ");
+    scanf("%lf", &sp->gpa);
+    printf("The name of the student is %s and they are %d years old and holds a GPA of %.1lf", sp->name, sp->age, sp->gpa);
+}
+
+
+int main() {
+    //here we create an instance of the object
+    Student s;
+    //below we pass the object to a function
+    inputStudent(&s);
+    return 0;
+}
