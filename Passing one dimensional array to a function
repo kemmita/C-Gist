@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int printArray(int *p_arr, int n){
+    for (int i = 0; i < n; ++i) {
+        printf("%4d", *(p_arr+i));
+    }
+}
+int main() {
+    int x[] = {10, 20, 30, 40, 50};
+    printArray(&x, 5);
+    return 0;
+}
