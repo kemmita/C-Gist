@@ -30,4 +30,22 @@ int main()
     return 0;
 }
 ```
-3. 
+3. Working with arrays
+```c
+#include <stdio.h>
+
+int main()
+{
+    // initialize array
+    int array[3] = {10,10,20};
+    // create pointer for array, this will point to the address of the first element in the array
+    int* ptrArr = array;
+    // get length of each int in array is 4 bytes * 10 elements = 40 we will take that and divide by 4, the size of a single int
+    const int arrayLength = sizeof(array) / sizeof(array[0]);
+    // loop through array
+    for (int i = 0; i < arrayLength; ++i) {
+        printf("%d \n", *(ptrArr+i));
+    }
+    return 0;
+}
+```
